@@ -97,7 +97,7 @@ app.post('/api/users/:_id/exercises', async (req, res) => {
       });
     }
   } catch (err) {
-    console.error(err);
+    res.json({ error: 'id not found' });
   }
 });
 
